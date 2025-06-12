@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Gayeong's Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Gayeong Kim</a>
+
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <section id="home" class="home">
+        <div class="home-img">
+            <img src="IMG_6593.JPG" alt="Gayeong Kim Photo">
+        </div>
+
+        <div class="home-content">
+            <h1>Hello! My name is <span>Gayeong Kim</span></h1>
+            <h3 class="typing-text"><span></span></h3>
+            <p>I am a recent graduate in Statistics from George Washington University with a strong interest in data analytics and data-driven decision making.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/gayeong-kim-b914b9300"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/gayeong4035/Projects"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="Resume_GayeongKim.pdf" class="btn">Download Resume</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-img">
+                <img src="IMG_6747.jpg" alt="Gayeong Kim Photo">
+        </div>
+
+        <div class="about-content">
+            <div class="about-left">
+                <h2>About Me</h2>
+                <p> I am a recent graduate of George Washington University currently preparing for my next career opportunity! I majored in Statistics and am particularly interested in structuring and solving problems using data. I have experience analyzing data with SAS, Python, and R, and I enjoy finding practical, actionable insights through logical and systematic approaches.</p>
+            </div>
+
+            <div class="about-right">
+                <div class="interest-travel">
+                    <span>✈️</span>
+                    <strong>Traveling</strong>
+                    <p>I enjoy traveling and experiencing different countries. So far, I have visited more than 15 countries!</p>
+                </div>
+                
+                <div class="interest-piano">
+                    <span>🎹</span>
+                    <strong>Playing the Piano</strong>
+                    <p>I enjoy playing the piano. When I attended an international school, I was the pianist for the orchestra!</p>
+                </div>
+
+                <div class="interest-book">
+                    <span>📚</span>
+                    <strong>Reading Books</strong>
+                    <p>I enjoy reading books and writing reviews, especially Korean novels. I believe that immersive stories help broaden my perspective on real life. I often read more than 10 books a month!</p>
+                </div>
+
+                <div class="interest-web">
+                    <span>👩🏻‍💻</span>
+                    <strong>Web Design and Coding</strong>
+                    <p>I enjoy web design and coding. I love the process of creating things with my own hands and am always excited to learn something new. Recently, I have been having a lot of fun learning by building my own web portfolio!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Recent Projects</h2>
+        <p class="project-subtext">Here are some of the personal projects I've worked on. Click to explore more details on GitHub!</p>
+        
+        <div class="project-container">
+            <div class="project-card">
+                <img src="pexels-goumbik-669613.jpg" alt="Project 1 Thumbnail">
+                <div class="project-titanic">
+                    <h3>Titanic Survival Prediction</h3>
+                    <p>Analyzed survival patterns in the Titanic dataset using SAS ODA. Used PROC SQL, DATA step, and custom formatting to uncover class-based disparities.</p>
+                    <a href="https://github.com/gayeong4035/Projects/tree/main/SAS_Titanic_Data_Project" target="_blank" class="btn">View README</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="pexels-martabranco-32418225.jpg" alt="Project 2 Thumbnail">
+                <div class="project-flu">
+                    <h3>Flu Shot Learning - DrivenData</h3>
+                    <p>Predicted H1N1 & seasonal flu vaccine uptake using behavioral and demographic data. Scored ROC AUC 0.8317 using Random Forest Classifier.</p>
+                    <a href="https://github.com/gayeong4035/Projects/tree/main/Competition1" target="_blank" class="btn">View README</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+
+            <div class="skill-card">
+                <img src="download.jpeg" alt="Python Icon">
+                <h3>Programming</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>R</li>
+                    <li>SAS</li>
+                    <li>HTML</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <img src="download (1).jpeg" alt="SQL Icon">
+                <h3>Data Analysis & SQL</h3>
+                <ul>
+                    <li>PROC SQL</li>
+                    <li>Excel</li>
+                    <li>Descriptive Statistics</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <img src="download.png" alt="Visualization Icon">
+                <h3>Visualization</h3>
+                <ul>
+                    <li>Matplotlib</li>
+                    <li>ggplot2</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <img src="images.png" alt="Certificate Icon">
+                <h3>Certificates</h3>
+                <ul>
+                    <li>Google Data Analytics Certificate</li>
+                    <li>ADsP (Associate Data Scientist Professional, South Korea)</li>
+                    <li>Social Survey Analyst (Level 2, South Korea)</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <img src="download (1).png" alt="Language Icon">
+                <h3>Languages</h3>
+                <ul>
+                    <li>English (Native)</li>
+                    <li>Korean (Native)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+        
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p class="contact-subtext">Have a project or opportunity you'd like to discuss? I'm open to data roles and collaborations!</p>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+                <p><i class="fa-solid fa-location-dot"></i> Virginia, USA</p>
+                <p><i class="fa-solid fa-phone"></i> +1 (202) 894-4794</p>
+                <p><i class="fa-solid fa-envelope"></i> gayeongkim4035@gmail.com</p>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/gayeong-kim-b914b9300" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://github.com/gayeong4035/Projects" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+
+            <footer class="footer">
+                <p>Thanks for visiting! Let’s connect.</p>
+            </footer>
+        </div>
+    </section>
+
+    <script>
+        let lastScrollY = window.scrollY;
+        const header = document.querySelector("header");
+        window.addEventListener("scroll", () => {
+        if (window.scrollY > lastScrollY) {
+            header.style.top = "-100px";
+        } 
+        else {
+            header.style.top = "0";
+        }
+        lastScrollY = window.scrollY;
+      });
+    </script>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector("nav").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
